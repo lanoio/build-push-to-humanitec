@@ -1,3 +1,13 @@
+# Lano fork
+
+This is Lano fork of fork of [humanitec/build-push-to-humanitec](https://github.com/humanitec/build-push-to-humanitec).
+It's needed to provide additional functionality which is not planned to add in the original repo.
+
+**IMOPORTANT**
+
+During opening PR make sure it's opened to the `main` branch of [lanoio/build-push-to-humanitec](https://github.com/lanoio/build-push-to-humanitec) instead of opening PR to the original repo.
+
+
 # Build Push to Humanitec Action
 
 This action builds a container image from a Dockerfile, then pushes the image to the Humanitec registry and finally
@@ -41,6 +51,10 @@ _Optional_ Build context path. Defaults to the root of repository.
 ### `dockerfile` (deprecated)
 
 _Optional_ The same as `context`, use `context` instead.
+
+### `commit`
+
+_Optional_ Specify your own commit SHA instead of GITHUB_SHA e.g. if new commit is automatically added during pipeline execution.
 
 ### `tag`
 
